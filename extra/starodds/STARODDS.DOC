@@ -1,0 +1,146 @@
+A VER:
+   Este proyecto se comenz¢ en Marzo de 1998 y se abandon¢ poco tiempo
+   despu‚s. En Agosto del 2000 lo retom‚ y lo acab‚, compil ndolo y todo.
+   Te mando el c¢digo fuente (.BAS) para que lo examines.
+
+   Este es el DOC original que escrib¡ cuando comenc‚ a programar esto:
+
+        LS Adventures (Marzo/Abril, 1998) tiene el honor de presentar:
+        ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ»
+        ºÚÄÄÄÄÄÄÂÄÄÄÄÄÄÂÄÄÄÄÂÄÄÄÄ¿para QBasic   +                *   º
+        º³ÚÄÄÄÄ¿ÃÄÄ¿ÚÄÄ´ÚÄÄ¿³ÚÄ¿ ³    *                  .           º
+        º³ÀÄÄÄÄÁ´  ³³  ³ÀÄÄÙ³ÀÄÙ ³    ÚÄÄÄÄÄÄ¿       ÚÄ¿     ÚÄ¿     º
+        ºÃÂÄÄÄÄ¿³  ³³  ³ÚÄÄ¿³Ú¿ ÚÙ   ÚÙ      ³   ú  ²³ÚÙ    ²³ÚÙ     º
+        º³ÀÄÄÄÄÙ³  ³³  ³³  ³³³À¿À¿  ÚÙ   Ú¿  ³     ²ÚÙ³    ²ÚÙ³  ÚÄÄÄ¿
+        ºÀÄÄÄÄÄÄÙ  ÀÙ  ÀÙ  ÀÁÙ ÀÄÙ  ³   ÚÙ³  ³     ²³ÚÙ    ²³ÚÙÚÄÙÚÄÄÙ
+        º   ú              *       ²³   ³ÚÙ  ³ ÚÄÄÄÄÙ³ ÚÄÄÄÄÙ³²À¿ ÀÄÄ¿
+        ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍË²³   ÀÙ  ÚÙÚÙ ÚÄ¿ÚÙÚÙ ÚÄ¿ÚÙ²²À¿  ÚÙ
+                 ÉÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼²³      ÚÙ²³  ÀÄÙ³²³  ÀÄÙ³ ÚÄÄÙÚÄÙº
+                 º  ú            + ²ÀÄÄÄÄÄÄÙ ²ÀÄÄÄÄÄÙ²ÀÄÄÄÄÄÙ²ÀÄÄÄÙ  º
+                 º        .        ²²²²²²²   ²²²²²²  ²²²²²²  ²²²²    º
+                 ÈÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ¼
+          '­AH! ¨PERO SE POD¡AN HACER AVENTURAS GR FICAS EN QBASIC?'
+
+        INTRO:
+        ======
+
+        Bueno, aqu¡ estamos otra vez escribiendo un .DOC de otro de
+        mis innumerables programas chapuceros en QBASIC. Esta vez se
+        trata de una aventura grafico-animada de desarrollo muy simple
+        con gr ficos de 2 Bits (4 colores). Con una tarjeta CGA el juego
+        ir  bien, pero si tienes EGA o VGA ver s m s colores. El objetivo
+        es rescatar a una bella princesa estelar de las garras del
+        archimalvado malo de turno. ¨Muy t¡pico? ¨Muy f cil? ¨Muy tonto?
+        Ya lo s‚. S¡mplemente es una aventura que he hecho para
+        distraerme en los ratos libres. Y de paso la mando al concurso
+        del CAAD, que necesita que todos participemos. Tambi‚n mando una
+        aventura conversacional (esa s¡ que la he trabajado en serio) que
+        es muy chula. Se llama OPA-OPA, b£scala (puedes ped¡rmela a m¡
+        o intentar conseguirla por CAAD) y disfr£tala.
+
+        En fin: Un juego sin pretensiones. Ju‚galo y disfr£talo.
+
+        EL CODIGO Y TODO ESO:
+        =====================
+
+        He incluido el c¢digo fuente por dos razones:
+
+        La PRIMERA, y m s importante, es que, como solo tengo el
+        QBASIC del MSDOS, no puedo compilar, as¡ que no tengo m s remedio
+        que mandarte el c¢digo fuente.
+
+        La SEGUNDA, y tambi‚n importante, es para que lo destripes
+        un poco y veas c¢mo se pueden hacer aventuras gr ficas en QB sic.
+
+        ¨SOLO 4 COLORES? ¨EN LA ERA DEL PENTIUM?
+        ========================================
+
+        Bueno, s¡. Me he visto obligado a trabajar con solo 2 bits
+        de color porque as¡ los gr ficos ocupan menos memoria y el
+        superlimitad¡simo QBASIC se traga mu¤ecos m s grandes y en mayor
+        cantidad.
+
+        Trabajo en SCREEN 1, que con un adaptador CGA es el modo
+        t¡pico CGA de los 4 colores: negro, cyan, magenta y blanco. En
+        tarjetas EGA o VGA tenemos 16 colores posibles entre los que
+        debemos elegir 4 que son los que se pueden ver a la vez. Por eso
+        en sistemas EGA o VGA (o sea, el 100%; no creo que nadie conserve
+        alguna CGA...) ver s colores que no te sonar n seguro del modo
+        CGA. Esto arregla un poco la presentaci¢n, aunque sigue siendo
+        un poco precaria.
+
+        COMO SE JUEGA
+        =============
+
+        Ejecuta STARODDS para jugar. Una vez cargado, se nos
+        presentan las t¡picas opciones. Elige INTRO si es la primera vez
+        que juegas, para poder seguir bien el hilo del juego.
+
+        Durante el juego se¤ala con el rat¢n donde quieras ir y
+        pulsa el bot¢n izquierdo para moverte. Cuando el puntero del
+        rat¢n (que normalmente es una mano con los dedos puestos hacia
+        abajo, como cuando hacemos para gesticular que alguien anda)
+        se encuentra con algo cogible, examinable, tocable, interactua-
+        ble de la pantalla, cambia a un ojo. Si pulsamos el bot¢n dere-
+        cho, en vez de un ojo veremos una mano abierta. Si pulsamos el
+        bot¢n derecho otra vez, nos sale de nuevo el ojo. Si pulsamos el
+        bot¢n izquierdo y el puntero es un ojo, examinamos el objeto; si
+        el puntero es una mano abierta, manipulamos el objeto (esto es:
+        coger, activar, empujar, abrir... ya s‚ que es muy simple, pero
+        ¨qu‚ quieres?). En algunas partes coger s objetos que habr s de
+        utilizar en alg£n sitio. Cuando esto ocurre, el objeto que coges
+        te aparece en la parte inferior derecha de la pantalla. Si lle-
+        vas el rat¢n hacia ‚l comprobar s que ‚ste se transforma en una
+        flecha. Elige un objeto para usarlo y luego pincha en el lugar
+        de la pantalla donde lo quieres usar. Si lo quieres usar con otro
+        objeto, selecci¢nalo de la lista como lo hiciste con el primero.
+
+        Para no tener que jugar todo de un tir¢n, el juego va por
+        c¢digos que se te ir n dando cada vez que hagas algo importante.
+        Para abandonar el juego pulsa ESC. Para introducir un c¢digo o
+        bien elige esa opci¢n del men£ de presentaci¢n o bien pulsa 'L'
+        durante el juego.
+
+        El juego es muy f cil, as¡ que no creo que necesites m s
+        instrucciones.
+
+        FIN
+        ===
+
+                              ­Disfruta la aventura!
+
+
+	A¥ADIDO EN MARZO DE 1999
+	========================
+
+	Escrib¡ este Doc cuando no estaba a£n terminada la aventura.
+	En ratos libres la terminar‚.
+
+	Gu¡a de archivos:
+
+	*.bas	-> Archivos basic para QBasic
+	*.msk	-> Archivos de m scara de sprites y de gr ficos de escenario
+	*.spr	-> Archivos de sprites
+	*.scn	-> Archivos de gr ficos de escenario
+	*.cur	-> Archivos de gr ficos de cursores del rat¢n
+	*.cmk	-> Archivo de m scara de cursores del rat¢n
+	*.cga	-> Pantallas de bitmap en cga para fondos de pantallas
+	*.doc	-> Documentos de texto
+	*.nop	-> Archivos no pasar que definen zonas en las localizaciones
+
+	A¥ADIDO EN MARZO DE 2000
+	========================
+
+	Dejo el proyecto ya que voy a reprogramar y redibujar la aventura
+	entera. DJGPP, C de 32 Bits, gr ficos en 256 colores, animaciones...
+	Muy Pronto.
+
+   A¥ADIDO EN AGOSTO DE 2000
+   =========================
+
+   Pero jo‚, si quedaba mu poco. Voy a terminarla. La versi¢n en C que alg£n
+   d¡a tendr‚ tiempo de programar (tengo tantos proyectos...) ser  mucho m s
+   larga, interactiva y completa... ­Pero esta es mi primera aventura gr fica!
+   ­Un poco de compresi¢n!
+
+   Disfruta...
