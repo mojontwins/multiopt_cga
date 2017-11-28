@@ -3,7 +3,7 @@
 DIM SHARED wideNibbles%(15)
 DIM SHARED colouredSquares%(10, 15)
 
-SUB GFX.box (x1%, y1%, x2%, y2%, c%)
+SUB GFX.Box (x1%, y1%, x2%, y2%, c%)
     x0% = x1% * 16: y% = y1% * 8
     FOR yc% = y1% TO y2%
         x% = x0%
@@ -65,5 +65,10 @@ SUB GFX.Init
     NEXT i%
     SLEEP 1
     CLS
+END SUB
+
+SUB GFX.waitFullFrame
+    WAIT &H3DA, 8
+    WAIT &H3DA, 8, 8
 END SUB
 
