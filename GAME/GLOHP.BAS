@@ -1,5 +1,5 @@
-DECLARE SUB GFX.box (x1%, y1%, x2%, y2%, c%)
 '$INCLUDE: 'GRAPHICS.BI'
+'$INCLUDE: 'VANE.BI'
 
 GFX.Init
 
